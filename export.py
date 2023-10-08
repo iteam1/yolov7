@@ -1,3 +1,6 @@
+'''
+python export.py --weights runs/train/training/weights/best.pt
+'''
 import argparse
 import sys
 import time

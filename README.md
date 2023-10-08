@@ -7,6 +7,14 @@ install `simple_image_download`: `pip install simple-image-download`
 
 install annotation tools `pip install labelImg`
 
+install `tensorboard`: `pip install tensorboard`
+
+install `onnx`: `pip install onnx`
+
+install `seaborn`: `pip install seaborn`
+
+install `onnxruntime`: `pip install onnxruntime`
+
 - Download trained weights
 
         mkdir trained
@@ -26,7 +34,17 @@ install annotation tools `pip install labelImg`
 
 - Detect custom dataset: `python detect.py --weights runs/train/training/weights/best.pt --conf 0.25 --img-size 640 --source dataset/test/A08Rx.jpg`
 
+- Export model : `python export.py --weights runs/train/training/weights/best.pt`
+
+- Predict model `onnx`: `python detect.py --weights runs/train/training/weights/best.onnx --conf 0.25 --img-size 640 --source dataset/test/A08Rx.jpg`
+
 # references
+
+[ONNX-YOLOv7-Object-Detection](https://github.com/ibaiGorordo/ONNX-YOLOv7-Object-Detection/tree/main)
+
+[netron app](https://netron.app/)
+
+[netron](https://github.com/lutzroeder/netron)
 
 [Official YOLO v7 Object Detection COMPLETE Tutorial for Google Colab](https://www.youtube.com/watch?v=_CkXDjmT8dc)
 
