@@ -36,9 +36,9 @@ install `onnxruntime`: `pip install onnxruntime`
 
 - Export model : `python export.py --weights runs/train/training/weights/best.pt`
 
-- Predict model `onnx`: `python detect.py --weights runs/train/training/weights/best.onnx --conf 0.25 --img-size 640 --source dataset/test/A08Rx.jpg`
-
 # references
+
+[Convert and Optimize YOLOv7 with OpenVINO™](https://docs.openvino.ai/2023.1/notebooks/226-yolov7-optimization-with-output.html)
 
 [ONNX-YOLOv7-Object-Detection](https://github.com/ibaiGorordo/ONNX-YOLOv7-Object-Detection/tree/main)
 
