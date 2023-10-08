@@ -103,6 +103,7 @@ for i,(batch_id,x0,y0,x1,y1,cls_id,score) in enumerate(outputs):
 
 Image.fromarray(ori_images[0])
 
-cv2.imshow('res',cv2.cvtColor(ori_images[0],cv2.COLOR_BGR2RGB))
+cv2.imshow('pred',cv2.cvtColor(ori_images[0],cv2.COLOR_BGR2RGB))
 cv2.waitKey()
+cv2.imwrite('assets/pred.jpg',cv2.cvtColor(ori_images[0],cv2.COLOR_BGR2RGB))
 cv2.destroyAllWindows()
