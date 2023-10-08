@@ -15,6 +15,8 @@ install `seaborn`: `pip install seaborn`
 
 install `onnxruntime`: `pip install onnxruntime`
 
+install `onnx-simplifier`: `pip install onnx-simplifier>=0.3.6`
+
 - Download trained weights
 
         mkdir trained
@@ -34,7 +36,12 @@ install `onnxruntime`: `pip install onnxruntime`
 
 - Detect custom dataset: `python detect.py --weights runs/train/training/weights/best.pt --conf 0.25 --img-size 640 --source dataset/test/A08Rx.jpg`
 
-- Export model : `python export.py --weights runs/train/training/weights/best.pt`
+- Export ONNX for ONNX inference
+
+        python export.py --weights runs/train/training/weights/best.pt \
+        --grid --end2end --simplify \
+        --topk-all 100 --iou-thres 0.65 --conf-thres 0.35 \
+        --img-size 640 640 --max-wh 640
 
 # references
 
