@@ -43,6 +43,8 @@ install `onnx-simplifier`: `pip install onnx-simplifier>=0.3.6`
         --topk-all 100 --iou-thres 0.65 --conf-thres 0.35 \
         --img-size 640 640 --max-wh 640
 
+ Predict model `Onnx`: `python predict_onnx.py`
+
 # references
 
 [Convert and Optimize YOLOv7 with OpenVINO™](https://docs.openvino.ai/2023.1/notebooks/226-yolov7-optimization-with-output.html)
