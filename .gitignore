@@ -1,6 +1,7 @@
 # Customize
 trained
 runs
+simple_images
 
 # Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
 *.jpg
